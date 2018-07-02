@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-tests.TestClass" class="navigator-link">
+              <span class="suite-name border-passed">tests.TestClass</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-tests.TestClass" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-tests.TestClass" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-tests.TestClass" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-tests.TestClass" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-tests.TestClass" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-tests.TestClass" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-tests.TestClass" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-tests.TestClass" class="hide-methods passed suite-tests.TestClass"> (hide)</a> <!-- hide-methods passed suite-tests.TestClass -->
+                      <a href="#" panel-name="suite-tests.TestClass" class="show-methods passed suite-tests.TestClass"> (show)</a> <!-- show-methods passed suite-tests.TestClass -->
+                    </span>
+                    <div class="method-list-content passed suite-tests.TestClass">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests.TestClass" title="tests.TestClass" class="method navigator-link" hash-for-method="currencyAssertion">currencyAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests.TestClass" title="tests.TestClass" class="method navigator-link" hash-for-method="discountAssertion">discountAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests.TestClass" title="tests.TestClass" class="method navigator-link" hash-for-method="searchAssertion">searchAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests.TestClass" title="tests.TestClass" class="method navigator-link" hash-for-method="sortAssertion">sortAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-tests.TestClass -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-tests.TestClass" class="panel tests.TestClass">
+          <div class="suite-tests.TestClass-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="currencyAssertion">
+                  </a> <!-- currencyAssertion -->
+                  <span class="method-name">currencyAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="discountAssertion">
+                  </a> <!-- discountAssertion -->
+                  <span class="method-name">discountAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchAssertion">
+                  </a> <!-- searchAssertion -->
+                  <span class="method-name">searchAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortAssertion">
+                  </a> <!-- sortAssertion -->
+                  <span class="method-name">sortAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tests.TestClass-class-passed -->
+        </div> <!-- panel tests.TestClass -->
+        <div panel-name="test-xml-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;tests.TestClass&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TestClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- tests.TestClass --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for tests.TestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for tests.TestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for tests.TestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_tests.TestClass');
+function tableData_tests.TestClass() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchAssertion')
+data.setCell(0, 2, 'tests.TestClass')
+data.setCell(0, 3, 3641);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'currencyAssertion')
+data.setCell(1, 2, 'tests.TestClass')
+data.setCell(1, 3, 2717);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sortAssertion')
+data.setCell(2, 2, 'tests.TestClass')
+data.setCell(2, 3, 1164);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'discountAssertion')
+data.setCell(3, 2, 'tests.TestClass')
+data.setCell(3, 3, 508);
+window.suiteTableData['tests.TestClass']= { tableData: data, tableDiv: 'times-div-tests.TestClass'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-tests.TestClass">
+              </div> <!-- times-div-tests.TestClass -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for tests.TestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">discountAssertion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[17:27:54.859184] Search for element By.cssSelector: div.product-price-and-shipping<br></span>
+                <span class="reporter-method-output">[17:27:54.8771851] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:54.9041866] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:54.9041866] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:54.9411887] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:54.9411887] Search for element By.className: discount-percentage<br></span>
+                <span class="reporter-method-output">[17:27:54.9661902] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:54.9661902] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:54.9821911] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.0031923] Search for element By.className: discount-percentage<br></span>
+                <span class="reporter-method-output">[17:27:55.0171931] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.0491949] Search for element By.className: price<br></span>
+                <span class="reporter-method-output">[17:27:55.0711962] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.1011979] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:55.1261993] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.1261993] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:55.1472005] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.1472005] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:55.1692018] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.1692018] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:55.1962033] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.1962033] Search for element By.className: discount-percentage<br></span>
+                <span class="reporter-method-output">[17:27:55.2182046] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.2182046] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:55.2312053] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.2522065] Search for element By.className: discount-percentage<br></span>
+                <span class="reporter-method-output">[17:27:55.2652073] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.296209] Search for element By.className: price<br></span>
+                <span class="reporter-method-output">[17:27:55.3162102] Found element div<br></span>
+                <span class="reporter-method-output">[17:27:55.3462119] Search for element By.className: regular-price<br></span>
+                <span class="reporter-method-output">[17:27:55.366213] Found element div<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">currencyAssertion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[17:27:47.3467544] Navigate to http://prestashop-automation.qatestlab.com.ua/ru/<br></span>
+                <span class="reporter-method-output">[17:27:49.5458801] Search for element By.cssSelector: #_desktop_currency_selector > div > span.expand-more._gray-darker.hidden-sm-down<br></span>
+                <span class="reporter-method-output">[17:27:49.5818822] Search for element By.className: products<br></span>
+                <span class="reporter-method-output">[17:27:49.6298849] Search for element By.cssSelector: span.price<br></span>
+                <span class="reporter-method-output">[17:27:49.6598867] Found element div<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchAssertion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[17:27:50.0529091] Search for element By.cssSelector: #_desktop_currency_selector > div > span.expand-more._gray-darker.hidden-sm-down<br></span>
+                <span class="reporter-method-output">[17:27:50.0729103] Click on element span<br></span>
+                <span class="reporter-method-output">[17:27:50.137914] Search for element By.cssSelector: #_desktop_currency_selector > div > ul > li:nth-child(3) > a<br></span>
+                <span class="reporter-method-output">[17:27:50.7179472] Click on element a<br></span>
+                <span class="reporter-method-output">[17:27:52.3440402] Search for element By.cssSelector: #search_widget > form > input.ui-autocomplete-input<br></span>
+                <span class="reporter-method-output">[17:27:52.4070438] Change value of input: dress<br></span>
+                <span class="reporter-method-output">[17:27:52.4790479] Changed element input<br></span>
+                <span class="reporter-method-output">[17:27:53.6111127] Search for element By.cssSelector: div#js-product-list-top p<br></span>
+                <span class="reporter-method-output">[17:27:53.6301137] Search for element By.cssSelector: div#js-product-list div.thumbnail-container<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sortAssertion</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[17:27:53.6941174] Search for element By.className: select-title<br></span>
+                <span class="reporter-method-output">[17:27:53.7161187] Click on element a<br></span>
+                <span class="reporter-method-output">[17:27:53.7701217] Search for element By.cssSelector: #js-product-list-top > div:nth-child(2) > div > div > div > a:nth-child(5)<br></span>
+                <span class="reporter-method-output">[17:27:53.8041237] Click on element a<br></span>
+                <span class="reporter-method-output">[17:27:53.8671273] Search for element By.cssSelector: div.product-price-and-shipping > span:nth-child(1)<br></span>
+                <span class="reporter-method-output">[17:27:54.5181645] Search for element By.cssSelector: div.product-price-and-shipping > span:nth-child(1)<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-tests.TestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">currencyAssertion</span>
+                <span class="method-start">3366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchAssertion</span>
+                <span class="method-start">6085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sortAssertion</span>
+                <span class="method-start">9727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">discountAssertion</span>
+                <span class="method-start">10892 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

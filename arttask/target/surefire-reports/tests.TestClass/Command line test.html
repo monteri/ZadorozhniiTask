@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 02 17:27:43 EEST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11409 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestClass.currencyAssertion()'><b>currencyAssertion</b><br>Test class: tests.TestClass<br/>
+<a href="#Output-1240843015" onClick='toggleBox("Output-1240843015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1240843015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1240843015">
+[17:27:47.3467544] Navigate to http://prestashop-automation.qatestlab.com.ua/ru/<br><br/>
+[17:27:49.5458801] Search for element By.cssSelector: #_desktop_currency_selector > div > span.expand-more._gray-darker.hidden-sm-down<br><br/>
+[17:27:49.5818822] Search for element By.className: products<br><br/>
+[17:27:49.6298849] Search for element By.cssSelector: span.price<br><br/>
+[17:27:49.6598867] Found element div<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.TestClass@1725dc0f</td></tr>
+<tr>
+<td title='tests.TestClass.discountAssertion()'><b>discountAssertion</b><br>Test class: tests.TestClass<br/>
+<a href="#Output-1840670774" onClick='toggleBox("Output-1840670774", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1840670774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1840670774">
+[17:27:54.859184] Search for element By.cssSelector: div.product-price-and-shipping<br><br/>
+[17:27:54.8771851] Search for element By.className: regular-price<br><br/>
+[17:27:54.9041866] Found element div<br><br/>
+[17:27:54.9041866] Search for element By.className: regular-price<br><br/>
+[17:27:54.9411887] Found element div<br><br/>
+[17:27:54.9411887] Search for element By.className: discount-percentage<br><br/>
+[17:27:54.9661902] Found element div<br><br/>
+[17:27:54.9661902] Search for element By.className: regular-price<br><br/>
+[17:27:54.9821911] Found element div<br><br/>
+[17:27:55.0031923] Search for element By.className: discount-percentage<br><br/>
+[17:27:55.0171931] Found element div<br><br/>
+[17:27:55.0491949] Search for element By.className: price<br><br/>
+[17:27:55.0711962] Found element div<br><br/>
+[17:27:55.1011979] Search for element By.className: regular-price<br><br/>
+[17:27:55.1261993] Found element div<br><br/>
+[17:27:55.1261993] Search for element By.className: regular-price<br><br/>
+[17:27:55.1472005] Found element div<br><br/>
+[17:27:55.1472005] Search for element By.className: regular-price<br><br/>
+[17:27:55.1692018] Found element div<br><br/>
+[17:27:55.1692018] Search for element By.className: regular-price<br><br/>
+[17:27:55.1962033] Found element div<br><br/>
+[17:27:55.1962033] Search for element By.className: discount-percentage<br><br/>
+[17:27:55.2182046] Found element div<br><br/>
+[17:27:55.2182046] Search for element By.className: regular-price<br><br/>
+[17:27:55.2312053] Found element div<br><br/>
+[17:27:55.2522065] Search for element By.className: discount-percentage<br><br/>
+[17:27:55.2652073] Found element div<br><br/>
+[17:27:55.296209] Search for element By.className: price<br><br/>
+[17:27:55.3162102] Found element div<br><br/>
+[17:27:55.3462119] Search for element By.className: regular-price<br><br/>
+[17:27:55.366213] Found element div<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.TestClass@1725dc0f</td></tr>
+<tr>
+<td title='tests.TestClass.searchAssertion()'><b>searchAssertion</b><br>Test class: tests.TestClass<br/>
+<a href="#Output-2048102341" onClick='toggleBox("Output-2048102341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2048102341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2048102341">
+[17:27:50.0529091] Search for element By.cssSelector: #_desktop_currency_selector > div > span.expand-more._gray-darker.hidden-sm-down<br><br/>
+[17:27:50.0729103] Click on element span<br><br/>
+[17:27:50.137914] Search for element By.cssSelector: #_desktop_currency_selector > div > ul > li:nth-child(3) > a<br><br/>
+[17:27:50.7179472] Click on element a<br><br/>
+[17:27:52.3440402] Search for element By.cssSelector: #search_widget > form > input.ui-autocomplete-input<br><br/>
+[17:27:52.4070438] Change value of input: dress<br><br/>
+[17:27:52.4790479] Changed element input<br><br/>
+[17:27:53.6111127] Search for element By.cssSelector: div#js-product-list-top p<br><br/>
+[17:27:53.6301137] Search for element By.cssSelector: div#js-product-list div.thumbnail-container<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>tests.TestClass@1725dc0f</td></tr>
+<tr>
+<td title='tests.TestClass.sortAssertion()'><b>sortAssertion</b><br>Test class: tests.TestClass<br/>
+<a href="#Output-173060252" onClick='toggleBox("Output-173060252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-173060252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-173060252">
+[17:27:53.6941174] Search for element By.className: select-title<br><br/>
+[17:27:53.7161187] Click on element a<br><br/>
+[17:27:53.7701217] Search for element By.cssSelector: #js-product-list-top > div:nth-child(2) > div > div > div > a:nth-child(5)<br><br/>
+[17:27:53.8041237] Click on element a<br><br/>
+[17:27:53.8671273] Search for element By.cssSelector: div.product-price-and-shipping > span:nth-child(1)<br><br/>
+[17:27:54.5181645] Search for element By.cssSelector: div.product-price-and-shipping > span:nth-child(1)<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.TestClass@1725dc0f</td></tr>
+</table><p>
+</body>
+</html>
